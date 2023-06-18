@@ -13,12 +13,15 @@
     .container {
       color: white;
       border: 5px solid gold;
-      display: inline-flex;
+      display: inline-flex;/* dis:inline-flex with flex-dir: row, dis:flex with flex-dir:column
+      display: inline-flex with flex-dir: column, display: flex with flex-dir: column*/
+
       flex-direction: column;
-      
+      gap: 2px;
     }
     .container>*{
       flex-basis: 100px;
+      
     }
     /*
 Select all the elements that are the direct
