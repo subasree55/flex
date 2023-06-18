@@ -16,11 +16,12 @@
       display: flex;/* dis:inline-flex with flex-dir: row, dis:flex with flex-dir:column
       display: inline-flex with flex-dir: column, display: flex with flex-dir: column*/
 
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-around;/*justify-content is for nowrap*/
-      align-items: center;/*align-items and align-content is for wrap*/
-      align-content: space-evenly;
+      flex-direction: row;/*row-reverse,column,column-reverse*/
+      flex-wrap: wrap;/*wrap,nowrap,wrap-reverse*/
+      justify-content: space-around;/*justify-content is for wrap horizontally*/
+      align-items: center;/*align-items is for nowrap*/
+      align-content: space-evenly;/*align-content is for wrap vertically*/
+      align-self: center;
       height: 70vh;
       gap: 2px;
     }
@@ -35,6 +36,8 @@ children of the .container class.
     */
 
     .red {background-color: #eb4d4b;
+      flex-shrink: 10;
+      align-self: flex-end;
     }
     .orange {background-color: #f0932b;}
     .yellow {background-color: #f6e58d;}
